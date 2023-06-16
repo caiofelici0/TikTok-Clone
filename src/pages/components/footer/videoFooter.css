@@ -1,0 +1,33 @@
+.video-footer {
+  position: relative;
+  bottom: 20%;
+  margin-left: 30px;
+}
+
+.video-footer-text h3,
+.video-footer-text p {
+  padding-bottom: 20px;
+}
+
+.video-music {
+  display: flex;
+}
+
+.video-record-img {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  width: 50px;
+  filter: invert(1);
+  animation: spin-record 4s infinite linear;
+}
+
+@keyframes spin-record {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
