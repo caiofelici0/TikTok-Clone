@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 
 import "./video.css";
 import VideoFooter from "./components/footer/VideoFooter";
+import VideoSidebar from "./components/sidebar/VideoSidebar";
 
 function Video() {
   const videoRef = useRef(null);
@@ -27,6 +28,7 @@ function Video() {
         loop
         className="video-player"
       ></video>
+      <VideoSidebar />
       <VideoFooter />
     </div>
   );
