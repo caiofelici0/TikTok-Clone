@@ -13,6 +13,18 @@
   display: flex;
 }
 
+.video-music-icon {
+}
+
+.video-music-title {
+  width: 80%;
+  overflow: hidden;
+}
+
+.video-music-title p {
+  animation: translate-music-title 4s infinite linear;
+}
+
 .video-record-img {
   position: absolute;
   bottom: 5px;
@@ -20,6 +32,16 @@
   width: 50px;
   filter: invert(1);
   animation: spin-record 4s infinite linear;
+}
+
+@keyframes translate-music-title {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes spin-record {

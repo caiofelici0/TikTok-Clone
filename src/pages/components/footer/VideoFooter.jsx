@@ -10,8 +10,10 @@ function VideoFooter() {
         <h3>@caiofelicio</h3>
         <p>descrição</p>
         <div className="video-music">
-          <MusicNoteIcon />
-          <p>titulo music</p>
+          <MusicNoteIcon className="video-music-icon" />
+          <div className="video-music-title">
+            <p>Música doida</p>
+          </div>
         </div>
       </div>
       <img
