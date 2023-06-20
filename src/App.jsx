@@ -6,6 +6,9 @@ import "./App.css";
 import Video from "./pages/Video";
 
 function App() {
+  let maxHeight;
+  if (window.innerHeight <= 800) maxHeight = window.innerHeight;
+
   const [videos, setVideos] = useState([]);
 
   const getVideos = async () => {
@@ -21,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ maxHeight: maxHeight + "px" }}>
       <div className="app-videos">
         {videos.map((video) => (
           <Video
